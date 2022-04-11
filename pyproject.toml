@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-issue"
+version = "0.1.0"
+description = ""
+authors = ["Daniel West <daniel.west.279@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.packages]]
+include = "my_package"
+from = "src"
+
+[tool.poetry.scripts]
+main = "my_package.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
